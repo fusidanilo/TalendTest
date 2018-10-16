@@ -32,12 +32,7 @@ public class AreaOfInterestParse {
      * 
      * {example} helloExemple("world") # hello world !.
      */
-    public static void parseAreaOfInterest(String message) {
-    	
-    	
-        if (message == null) {
-            message = "World"; //$NON-NLS-1$
-        }
-        System.out.println("Hello " + message + " !"); //$NON-NLS-1$ //$NON-NLS-2$
+    public static String parseAreaOfInterest(String message) {
+    	return "WORLD";
     }
 }
