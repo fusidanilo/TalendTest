@@ -39,7 +39,7 @@ public class Parser {
     	if (message.length() == 0)
     		return "";
     	if (message.length() % 2 == 1){
-    		newValue = (new StringBuilder(value)).insert(0, '0').toString();
+    		newValue = (new StringBuilder(message)).insert(0, '0').toString();
     	}
     	
     	//Parse newValue
