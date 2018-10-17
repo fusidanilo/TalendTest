@@ -36,6 +36,7 @@ public class LSACParserClass {
     	return "ciao";
     }
     
+	@SuppressWarnings("unused")
 	private static String getAreaOfInterestValue(String value){
 		switch(value){
 		case "01":
