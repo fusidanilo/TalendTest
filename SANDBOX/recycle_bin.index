@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin" lastUpdate="2018-10-17T12:17:42.148+0200">
+<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin" lastUpdate="2018-10-17T12:33:36.360+0200">
   <deletedItems id="_SynPINHkEeiYWPcnZNUHNg" path="" type="CONTEXT"/>
   <deletedItems id="_jqCj4NFjEeiCHeHyUGkadw" path="" type="ROUTINES"/>
   <deletedItems id="_xiMEYNHwEeiYWPcnZNUHNg" path="" type="ROUTINES"/>
   <deletedItems id="_HvwksNHvEeiYWPcnZNUHNg" path="" type="ROUTINES"/>
   <deletedItems id="_ZLkCUNHxEeiYWPcnZNUHNg" path="" type="ROUTINES"/>
+  <deletedItems id="_xCmMENH1EeiYWPcnZNUHNg" path="" type="ROUTINES"/>
 </recyclebin:RecycleBin>
