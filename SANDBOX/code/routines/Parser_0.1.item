@@ -46,8 +46,8 @@ public class Parser {
     	for(int i = 0; i < newValue.length(); i = i + 2){
     		String temp = getAreaOfInterestValue(newValue.substring(i, i + 2));
     		if (temp != ""){
-    			stringBuilder.append(temp);
-    			stringBuilder.append(";");
+    			stringBuilder = stringBuilder.append(temp);
+    			stringBuilder = stringBuilder.append(";");
     		}
     	}
     	return stringBuilder.toString();
