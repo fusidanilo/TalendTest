@@ -109,6 +109,6 @@ public class LSACParser {
 			return "Litigation/Advocacy";
 			default:
 			return "";
+		}
 	}
-}
 }
