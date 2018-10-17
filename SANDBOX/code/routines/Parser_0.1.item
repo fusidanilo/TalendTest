@@ -43,8 +43,7 @@ public class Parser {
     	if (message.length() % 2 == 1){
     		newValue = (new StringBuilder(message)).insert(0, '0').toString();
     	}
-    	return newValue;
-    	/**
+    	
     	//Parse newValue
     	for(int i = 0; i < newValue.length(); i = i + 2){
     		String temp = getAreaOfInterestValue(newValue.substring(i, i + 2));
@@ -53,7 +52,7 @@ public class Parser {
     			stringBuilder.append(";");
     		}
     	}
-    	return stringBuilder.toString(); **/
+    	return stringBuilder.toString();
     }
     	
     private static String getAreaOfInterestValue(String value){
