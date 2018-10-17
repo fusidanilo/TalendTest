@@ -32,7 +32,7 @@ public class Test {
      * 
      * {example} helloExemple("world") # hello world !.
      */
-    public static void helloExample(String message) {
+    public static String helloExample(String message) {
     	StringBuilder stringBuilder = new StringBuilder("world");
     	return stringBuilder.toString();
     }
