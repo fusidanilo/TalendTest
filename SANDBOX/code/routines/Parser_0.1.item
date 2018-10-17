@@ -32,13 +32,13 @@ public class Parser {
      * 
      * {example} parseAreaOfInterest(""): "".
      */
-    public static String parseAreaOfInterest(String value) {
-    	String newValue = value;
+    public static String parseAreaOfInterest(String message) {
+    	String newValue = message;
     	StringBuilder stringBuilder = new StringBuilder();
     	//Check string length
-    	if (value.length() == 0)
+    	if (message.length() == 0)
     		return "";
-    	if (value.length() % 2 == 1){
+    	if (message.length() % 2 == 1){
     		newValue = (new StringBuilder(value)).insert(0, '0').toString();
     	}
     	
