@@ -30,7 +30,7 @@ public class Parser {
      * 
      * {Category} User Defined
      * 
-     * {param} string message: The area of interest field.
+     * {param} string("00") input: The area of interest field.
      * 
      * {example} parseAreaOfInterest(""): "".
      */
