@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
   <context confirmationNeeded="false" name="Default">
-    <contextParameter comment="" name="resource_file_LSAC" prompt="resource_file_LSAC?" promptNeeded="false" type="id_String" value="C:/Users/dfusi/OneDrive - Deloitte (O365D)/Loyola/Talend/Loyola_LSAC source list_ONE.csv"/>
+    <contextParameter comment="" name="resource_file_LSAC_CSV_File" prompt="resource_file_LSAC_CSV_File?" promptNeeded="false" type="id_String" value="C:/Users/dfusi/OneDrive - Deloitte (O365D)/Loyola/Talend/Loyola_LSAC source list_ONE.csv"/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
@@ -112,11 +112,13 @@
     <routinesParameter id="_fB0sUNFHEeirg_xj5Ygxcw" name="TalendDate"/>
     <routinesParameter id="_fEXC8NFHEeirg_xj5Ygxcw" name="TalendStringUtil"/>
     <routinesParameter id="_fC31MNFHEeirg_xj5Ygxcw" name="TalendString"/>
+    <routinesParameter id="_jqCj4NFjEeiCHeHyUGkadw" name="Parser"/>
+    <routinesParameter id="_ZLkCUNHxEeiYWPcnZNUHNg" name="LSACParser"/>
   </parameters>
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_1"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.resource_file_LSAC"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.resource_file_LSAC_CSV_File"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
@@ -1535,8 +1537,10 @@
       </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
-      <varTables name="Var" sizeState="INTERMEDIATE"/>
+      <uiProperties shellMaximized="true"/>
+      <varTables name="Var" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="LSACParser.parseAreaOfInterest(row1.LLM_Area_Interest) " name="AreaOfInterestNormalized" type="id_String"/>
+      </varTables>
       <outputTables name="Output_Lead" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="" name="Id" type="id_String"/>
         <mapperTableEntries expression="" name="MasterRecordId" nullable="true" type="id_String"/>
@@ -1681,7 +1685,7 @@
         <mapperTableEntries expression="" name="Mailchimp_opt_in_time__c" nullable="true" type="id_Date"/>
         <mapperTableEntries expression="" name="Mailchimp_Opt_Out_Time__c" nullable="true" type="id_Date"/>
         <mapperTableEntries expression="" name="Application_in_Progress__c" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="" name="LLM_Area_Interest__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.AreaOfInterestNormalized " name="LLM_Area_Interest__c" nullable="true" type="id_String"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
         <mapperTableEntries name="LSAC_Account_Number" nullable="true" type="id_String"/>
@@ -3448,13 +3452,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_4b91013f-46de-42ec-a14d-a630eb9277e4"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>M11KrZ+jeSqG4d9hAmryTIovUyPz/XL2lk9Zy+g06iuD78qIbOn8I5ubUdTQcCGqsFy5EaGvzYjY
-wQoa8axhjA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b54b134a-b2f2-4c26-beb6-c10185602430"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>G/KT601YYk9lzKumzrnrKhgq7leZArUWiuIdIQL/Fk6yhoATAoMvnEtKVBJ2xGiDUPLIq9Hh2In8
-GzfNcltkbQ==</DigestValue></Reference></SignedInfo><SignatureValue>ab+J2hl1bgvzfuZAUz1o2yocj/0I3gErjnCmj/y6D7eZlMdByB7bukBYnX8NevtOAbADt2pl3t9R
-ggPVpzxgAQIcttuqgbdXxL9MRzIRfRvz+3w+bB/3+OSpOuTjptCMUguJg6Ymh+dK6Vdy0gfUuR9z
-79Qz8djjD1IeDZCkeoVknIjuDO+t9I/6A4q463QRra0iVjWmAdelRb66r1lBUXymucM7sBNwHVKZ
-gnxEmbM3lp9BCzZ6zzQ8iBrKnpAwYuNG10dzHhjM9fwcddWBjPHLuwzLzs5MzUHVYupTCWGOt7Yh
-1iX2DXOopej9XWlRoT/sjObNvmITOtnMl9M2lQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_61cf450f-be73-4665-9acc-70d4e7c21444"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>531CWPx42mW5/8IK/hza5L+4DTrOEjOkzfOoT6ViRVH0yd1xQCEyfTZdddN4DPXfNyoycvoUnc7X
+YVfdGR9XPQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d5604824-34a7-40ac-93bb-4a8b333ee082"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>cF/1I6kyD5RUb/ejlkXymymrERHbAiCh9oFegCXHOuJphonultKRmlYlIguSR48wzM4pp5Z4NEj8
+HIa6q04r9Q==</DigestValue></Reference></SignedInfo><SignatureValue>rxrTY2CYn3CvpA9USRJLJNAPVnzcAILBKN+zOpXTZ90p2wWte77ITmbyb2LuYFB4VKbXA1pzqXej
+9kDAJQ6l+AvSibTekCcERtdIIeDlnV3osSkndwByjo2Pnj1tYC5nHImSL8gDSnaz5+EB4y5wPKDK
+nQMhoVB6xyK+Lm+NTCs1hc6I24DWmg3iw9e5i9CvfPhAToqvqlHSx2/+Uf5XJLhPfXXwi2YmwzLs
+UWNAiWHjmFDvczuWGLHXIOea3PGe8aKmR8M7y24p5hJQ8ZG2CajjwwlF9YUFJXL6H+Uv2pi/7POX
+jlUA1Cgw1xee+4suv/B9qWdcXBgqrLo5EN9Tgw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -3478,4 +3482,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b54b134a-b2f2-4c26-beb6-c10185602430" Target="#_4b91013f-46de-42ec-a14d-a630eb9277e4"><Timestamp>2018-10-17 08:26:07</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d5604824-34a7-40ac-93bb-4a8b333ee082" Target="#_61cf450f-be73-4665-9acc-70d4e7c21444"><Timestamp>2018-10-17 10:12:08</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
