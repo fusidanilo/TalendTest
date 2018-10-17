@@ -35,7 +35,7 @@ public class LSACParserClass {
     public static String helloExample(String message) {
     	return "ciao";
     }
-    
+    /***
 	@SuppressWarnings("unused")
 	private static String getAreaOfInterestValue(String value){
 		switch(value){
@@ -94,5 +94,5 @@ public class LSACParserClass {
 			default:
 			return "";
 		}
-	}
+	}**/
 }
