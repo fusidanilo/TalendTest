@@ -33,9 +33,6 @@ public class LSACParser {
 	* {example} parseAreaOfInterest(""): "".
 	*/
 	public static String parseAreaOfInterest(String message) {
-		
-		return "CIAO";
-		/****
 		String newValue = message;
 		StringBuilder stringBuilder = new StringBuilder();
 		//Check string length
@@ -53,7 +50,7 @@ public class LSACParser {
 				stringBuilder.append(";");
 			}
 		}
-		return stringBuilder.toString(); **/
+		return stringBuilder.toString();
 	}
 	
 	private static String getAreaOfInterestValue(String value){
