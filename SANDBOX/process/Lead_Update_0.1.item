@@ -1544,18 +1544,19 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables name="Var" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="LSACParser.parseAreaOfInterest(row1.LLM_Area_Interest) " name="AreaOfInterestNormalized" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="LSACParser.parseAreaOfInterest(row1.LLM_Area_Interest)  row1.FirstName " name="AreaOfInterestNormalized" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.FirstName + &quot; &quot; + row1.MidName " name="FirstName" type="id_String"/>
       </varTables>
       <outputTables name="Output_Lead" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="" name="Id" type="id_String"/>
         <mapperTableEntries expression="" name="MasterRecordId" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.LastName " name="LastName" type="id_String"/>
-        <mapperTableEntries expression="row1.FirstName" name="FirstName" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.FirstName " name="FirstName" nullable="true" type="id_String"/>
         <mapperTableEntries expression="" name="Salutation" nullable="true" type="id_String"/>
         <mapperTableEntries expression="" name="RecordTypeId" nullable="true" type="id_String"/>
         <mapperTableEntries expression="" name="Title" nullable="true" type="id_String"/>
         <mapperTableEntries expression="" name="Company" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="" name="Street" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Street1 " name="Street" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.City" name="City" nullable="true" type="id_String"/>
         <mapperTableEntries expression="" name="State" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.PostalCode" name="PostalCode" nullable="true" type="id_String"/>
@@ -1611,7 +1612,7 @@
         <mapperTableEntries expression="" name="Fair__c" nullable="true" type="id_String"/>
         <mapperTableEntries expression="" name="Forum_Type__c" nullable="true" type="id_String"/>
         <mapperTableEntries expression="" name="Future_LSAT_Date__c" nullable="true" type="id_Date"/>
-        <mapperTableEntries expression="" name="Gender__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Gender " name="Gender__c" nullable="true" type="id_String"/>
         <mapperTableEntries expression="" name="Grant_Scholarship__c" nullable="true" type="id_String"/>
         <mapperTableEntries expression="" name="High_Deg_Award_Date__c" nullable="true" type="id_Date"/>
         <mapperTableEntries expression="" name="High_Deg_Country__c" nullable="true" type="id_String"/>
@@ -1631,7 +1632,7 @@
         <mapperTableEntries expression="" name="LGBT__c" nullable="true" type="id_String"/>
         <mapperTableEntries expression="" name="LLM_Country_of_Citizenship__c" nullable="true" type="id_String"/>
         <mapperTableEntries expression="" name="LLM_Matriculated__c" type="id_Boolean"/>
-        <mapperTableEntries expression="" name="LSAC_Account_Number__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.LSAC_Account_Number " name="LSAC_Account_Number__c" nullable="true" type="id_String"/>
         <mapperTableEntries expression="" name="Lawyer__c" type="id_Boolean"/>
         <mapperTableEntries expression="" name="Licensed__c" type="id_Boolean"/>
         <mapperTableEntries expression="" name="Mid_Name__c" nullable="true" type="id_String"/>
@@ -3464,13 +3465,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c49a48b3-b07c-4361-9a2c-edf41f130ac4"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>x5svFmYl4CPOC8ZgFSt90dAhp0N3x02xwPcIZfBAYU82dXv15qgLmHIzba8HO7XXbG1NlQMzDuHD
-OmWSnjdkBg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_955ebe18-0a0c-49f9-acb1-0eb4a73d54de"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>oV4jo/cyWR9yPhMYRLDbqNQZ/abbjaKc1mVd7eWnt/DUVCSwroxDGVqjmbtzcYls3NbT6FrX4/jr
-gBe8QnGEwQ==</DigestValue></Reference></SignedInfo><SignatureValue>Hg9dzSP3SW1LGUlqbD0Eg18Nys+FtQnmJdH4vwMknxjJzqQsh1RNLfqEa4Odys3jObDabkko3ecc
-AI5PwH2cFCEP4Yl7AkkF3VHXH+61iQtVsNe2S7CjNEi1Rn6MwyjkXEyVQa6FK6g2GPwI3kNd0b5h
-D59t9KUbEwgaeOXilkJ9UziCJ6T62PhPbiemDxtxogfuth/fxUHrRWyCOnYLN4A9fjDT8AOEHX5v
-7y23pi/MfaeoRKKWJ5qhO6NnanZplru7SnO5iadXm4WPIABDtUNV+LA8ugxKMHDE90coZ0UzOSvi
-aBzsP35T7Dv7yX7K9WBvQXgqFLCCNNlqBduImg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_1ffea6c0-fe00-40b2-8eca-f218f9fd020e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>YNz9vgIbtsG2r/DhFWlH/tlWrlk7fLdD9iHLouckZ/i8nY2Wog3ir+62r0OeYk4xswj/DxrHXtyX
+d22ET4knBw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a61ce9c3-6aca-4dc9-a19b-7cf10bdf4820"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>jyxrr73X1a4UiJbETudXJLQU0xGnwAUrUFg4s3jJNDmzGxL9iar6tXXksDdf6cItSvy/DIxCX5n0
+lK7h4ntwDA==</DigestValue></Reference></SignedInfo><SignatureValue>LGJHeAPpwd13lTo6upyUvdLFz1OiHPrvk2utNyZIF5IChMGUlYrkK1QNSXy1Uo9kUy4JRWT9ETIE
+eO/Kq3tG7MSl6vKfUyxWkcC41RKWwnCQ8bFb0962uGHeyXQXP8vsSf31BqIQE2YLWY6+6GXcF8v+
+fZUODVm4zmy1SC5myQ/Nm7ZQPrLo2U4uVCVlAcVIjpB5Rt0KmtIALni6Sjdw+hZiyV1g5VdyMr6j
+AGgPwHGgyjf8XuHGQwRZegOJJIZzBMkTXU91cbrHB61EaNwXQ++RKtwBFn3H7fdHToAGoUJaj7aU
+jvLKbm48mnJKeQJ6HjcnI8AKtjlUdLcUahc4BQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -3494,4 +3495,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_955ebe18-0a0c-49f9-acb1-0eb4a73d54de" Target="#_c49a48b3-b07c-4361-9a2c-edf41f130ac4"><Timestamp>2018-10-17 13:51:13</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a61ce9c3-6aca-4dc9-a19b-7cf10bdf4820" Target="#_1ffea6c0-fe00-40b2-8eca-f218f9fd020e"><Timestamp>2018-10-17 14:56:46</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
