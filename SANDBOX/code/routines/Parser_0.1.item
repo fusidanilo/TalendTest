@@ -36,7 +36,7 @@ public class Parser {
     	String newValue = message;
     	StringBuilder stringBuilder = new StringBuilder();
     	//Check string length
-    	if (message.length() == 0)
+    	if (message.length() == 0 || message == null)
     		return "";
     	if (message.length() % 2 == 1){
     		newValue = (new StringBuilder(message)).insert(0, '0').toString();
