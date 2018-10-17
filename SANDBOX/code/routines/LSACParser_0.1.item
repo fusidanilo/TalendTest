@@ -26,7 +26,7 @@ public class LSACParser {
      * 
      * {talendTypes} String
      * 
-     * {Category} User Defined
+     * {Category} LSAC Parser
      * 
      * {param} string("00") input: The area of interest field.
      * 
