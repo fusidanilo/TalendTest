@@ -18,7 +18,7 @@ package routines;
  * 
  * 5. {example} gives a example for the Function. it is optional.
  */
-public class Parser {
+public class ParserClass {
 
     /**
      * parseAreaOfInterest: it parses the AreaOfInterest field.
