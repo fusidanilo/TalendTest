@@ -291,4 +291,39 @@ public class LSACParser {
 			return "";
 		}
 	}
+	
+	
+	
+    /**
+	* parseClasseRank: it parses the Class Rank Time field.
+	* 
+	* 
+	* {talendTypes} String
+	* 
+	* {Category} LSAC Parser
+	* 
+	* {param} string("1") input: The Class Rank field.
+	* 
+	* {example} parseClasseRank(""): "".
+	*/
+	public static String parseClasseRank(String field) {
+		switch (field){
+		case "1":
+			return "Top 5%";
+		case "2":
+			return "Top 10%";
+		case "3":
+			return "Top 20%";
+		case "4":
+			return "Top 30%";
+		case "5":
+			return "Top 40%";
+		case "6":
+			return "Top 50%";
+		case "7":
+			return "Below 50%";
+		default:
+			return "";
+		}
+	}
 }
