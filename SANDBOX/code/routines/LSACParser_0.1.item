@@ -381,4 +381,57 @@ public class LSACParser {
 		}
 		return "";
 	}
+	
+    /**
+	* parseStudentOrg: it parses the Student Organization field.
+	* 
+	* 
+	* {talendTypes} String
+	* 
+	* {Category} LSAC Parser
+	* 
+	* {param} string("1") input: The Student Organization field.
+	* 
+	* {example} parseStudentOrg(""): "".
+	*/
+	public static String parseStudentOrg(String field) {
+		switch (field){
+		case "1":
+			return "Asian American Law Students Association";
+		case "2":
+			return "Black Law Students Association";
+		case "3":
+			return "Catholic Law Students Association";
+		case "4":
+			return "Christian Legal Society/Law Students";
+		case "5":
+			return "Disabled Law Students Association";
+		case "6":
+			return "LGBT Law Students Association";
+		case "7":
+			return "Hispanic/Latino Law Students Association";
+		case "8":
+			return "Islamic Law Students Association";
+		case "9":
+			return "Jewish Law Students Association";
+		case "10":
+			return "Latter Day Saints Law Students Association";
+		case "11":
+			return "Middle Eastern Law Students Association";
+		case "12":
+			return "Minority Law Students Association";
+		case "13":
+			return "Native American Law Students Association";
+		case "14":
+			return "Non-traditional Aged Law Students Association";
+		case "15":
+			return "Pacific American Law Students Association";
+		case "16":
+			return "South Asian Law Students Association";
+		case "17":
+			return "Women’s Law Caucus/Student Association/Coalition";
+		default:
+			return "";
+		}
+	}
 }
