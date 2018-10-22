@@ -326,4 +326,33 @@ public class LSACParser {
 			return "";
 		}
 	}
+	
+    /**
+	* parseProgramType: it parses the Program Type field.
+	* 
+	* 
+	* {talendTypes} String
+	* 
+	* {Category} LSAC Parser
+	* 
+	* {param} string("1") input: The Program Type field.
+	* 
+	* {example} parseProgramType(""): "".
+	*/
+	public static String parseProgramType(String field) {
+		switch (field){
+		case "1":
+			return "Distance";
+		case "2":
+			return "Dual Degree";
+		case "3":
+			return "Executive LLM";
+		case "4":
+			return "On Campus";
+		case "5":
+			return "Online LLM";
+		default:
+			return "";
+		}
+	}
 }
