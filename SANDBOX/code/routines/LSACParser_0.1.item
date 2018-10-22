@@ -395,27 +395,48 @@ public class LSACParser {
 	* {example} parseStudentOrg(""): "".
 	*/
 	public static String parseStudentOrg(String field) {
-		switch (field){
-		case "1":
+		String newValue = field;
+		StringBuilder stringBuilder = new StringBuilder();
+		//Check string length
+		if (field.length() == 0 || field == null)
+			return "";
+		if (field.length() % 2 == 1){
+			newValue = (new StringBuilder(field)).insert(0, '0').toString();
+		}
+		
+		//Parse newValue
+		for(int i = 0; i < newValue.length(); i = i + 2){
+			String temp = getStudentOrgValue(newValue.substring(i, i + 2));
+			if (temp != ""){
+				stringBuilder.append(temp);
+				stringBuilder.append(";");
+			}
+		}
+		return stringBuilder.toString();
+	}
+	
+	private static String getStudentOrgValue(String value){
+		switch (value){
+		case "01":
 			return "Asian American Law Students Association";
-		case "2":
+		case "02":
 			return "Black Law Students Association";
-		case "3":
+		case "03":
 			return "Catholic Law Students Association";
-		case "4":
+		case "04":
 			return "Christian Legal Society/Law Students";
-		case "5":
+		case "05":
 			return "Disabled Law Students Association";
-		case "6":
+		case "06":
 			return "LGBT Law Students Association";
-		case "7":
+		case "07":
 			return "Hispanic/Latino Law Students Association";
-		case "8":
+		case "08":
 			return "Islamic Law Students Association";
-		case "9":
+		case "09":
 			return "Jewish Law Students Association";
 		case "10":
-			return "Latter Day Saints Law Students Association";
+			return "Latter Day Saints Law Students Ass.";
 		case "11":
 			return "Middle Eastern Law Students Association";
 		case "12":
@@ -423,15 +444,15 @@ public class LSACParser {
 		case "13":
 			return "Native American Law Students Association";
 		case "14":
-			return "Non-traditional Aged Law Students Association";
+			return "Non-traditional Aged Law Students Ass.";
 		case "15":
-			return "Pacific American Law Students Association";
+			return "Pacific American Law Students Ass.";
 		case "16":
 			return "South Asian Law Students Association";
 		case "17":
-			return "Women’s Law Caucus/Student Association/Coalition";
+			return "Women’s Law Caucus/Student Ass./Coalition";
 		default:
 			return "";
-		}
+		}	
 	}
 }
