@@ -355,4 +355,30 @@ public class LSACParser {
 			return "";
 		}
 	}
+	
+    /**
+	* parseExpectedEntryYear: it parses the Expected Entry Year field.
+	* 
+	* 
+	* {talendTypes} String
+	* 
+	* {Category} LSAC Parser
+	* 
+	* {param} string("1") input: The Expected Entry Year field.
+	* 
+	* {example} parseExpectedEntryYear(""): "".
+	*/
+	public static String parseExpectedEntryYear(String field) {
+		Integer num = Integer.valueOf(field);
+		if (num >= 1 && num <= 96){
+			return String.valueOf(2002 + num);
+		}else if (num == 97){
+			return "Uncertain When Applying";
+		}else if (num == 98){
+			return "Uncertain If Applying";
+		}else if (num == 99){
+			return "Not Applying";
+		}
+		return "";
+	}
 }
