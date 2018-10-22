@@ -111,4 +111,42 @@ public class LSACParser {
 			return "";
 		}
 	}
+	
+    /**
+	* parseEthnicity: it parses the Ethnicity field.
+	* 
+	* 
+	* {talendTypes} String
+	* 
+	* {Category} LSAC Parser
+	* 
+	* {param} string("AT") input: The Ethnicity field.
+	* 
+	* {example} parseAreaOfInterest(""): "".
+	*/
+	public static String parseEthnicity(String field) {
+		switch (field){
+		case 'AT':
+			return 'Aboriginal or Torres Strait Islander Australian';
+		case 'AI':
+			return 'American Indian or Alaska Native';
+		case 'AS':
+			return 'Asian';
+		case 'BA':
+			return 'Black or African American';
+		case 'CW':
+			return 'Caucasian';
+		case 'CD':
+			return 'Canadian Aboriginal';
+		case 'HS':
+			return 'Hispanic/Latino';
+		case 'NH':
+			return 'Native Hawaiian/Other Pacific Islander';
+		case 'PR':
+			return 'Puerto Rican';
+		default:
+				return '';
+		}
+		return '';
+	}
 }
