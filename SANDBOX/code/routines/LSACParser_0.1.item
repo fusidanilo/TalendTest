@@ -122,31 +122,173 @@ public class LSACParser {
 	* 
 	* {param} string("AT") input: The Ethnicity field.
 	* 
-	* {example} parseAreaOfInterest(""): "".
+	* {example} parseEthnicity(""): "".
 	*/
 	public static String parseEthnicity(String field) {
 		switch (field){
-		case 'AT':
-			return 'Aboriginal or Torres Strait Islander Australian';
-		case 'AI':
-			return 'American Indian or Alaska Native';
-		case 'AS':
-			return 'Asian';
-		case 'BA':
-			return 'Black or African American';
-		case 'CW':
-			return 'Caucasian';
-		case 'CD':
-			return 'Canadian Aboriginal';
-		case 'HS':
-			return 'Hispanic/Latino';
-		case 'NH':
-			return 'Native Hawaiian/Other Pacific Islander';
-		case 'PR':
-			return 'Puerto Rican';
+		case "AT":
+			return "Aboriginal or Torres Strait Islander Australian";
+		case "AI":
+			return "American Indian or Alaska Native";
+		case "AS":
+			return "Asian";
+		case "BA":
+			return "Black or African American";
+		case "CW":
+			return "Caucasian";
+		case "CD":
+			return "Canadian Aboriginal";
+		case "HS":
+			return "Hispanic/Latino";
+		case "NH":
+			return "Native Hawaiian/Other Pacific Islander";
+		case "PR":
+			return "Puerto Rican";
 		default:
-				return '';
+			return "";
 		}
-		return '';
+	}
+	
+    /**
+	* parseAcademicIndicator: it parses the Academic Indicator field.
+	* 
+	* 
+	* {talendTypes} String
+	* 
+	* {Category} LSAC Parser
+	* 
+	* {param} string("1") input: The Academic Indicator field.
+	* 
+	* {example} parseAcademicIndicator(""): "".
+	*/
+	public static String parseAcademicIndicator(String field) {
+		switch (field){
+		case "1":
+			return "Superior";
+		case "2":
+			return "Above Average";
+		case "3":
+			return "Average";
+		case "4":
+			return "Below Average";
+		default:
+			return "";
+		}
+	}
+	
+    /**
+	* parseSelfReportedGPA: it parses the Self Reported GPA field.
+	* 
+	* 
+	* {talendTypes} String
+	* 
+	* {Category} LSAC Parser
+	* 
+	* {param} string("1") input: The Self Reported GPA field.
+	* 
+	* {example} parseSelfReportedGPA(""): "".
+	*/
+	public static String parseSelfReportedGPA(String field) {
+		switch (field){
+		case "0":
+			return "No Response";
+		case "1":
+			return "3.75 and up";
+		case "2":
+			return "3.50 to 3.74";
+		case "3":
+			return "3.00 to 3.49";
+		case "4":
+			return "2.50 to 2.99";
+		case "5":
+			return "2.00 to 2.49";
+		case "6":
+			return "Below 2.00";
+		case "7":
+			return "No Grading System/No Compatible Grading System";
+		default:
+			return "No Response";
+		}
+	}
+	
+    /**
+	* parseCurrentEmployment: it parses the Current Employment field.
+	* 
+	* 
+	* {talendTypes} String
+	* 
+	* {Category} LSAC Parser
+	* 
+	* {param} string("1") input: The Current Employment field.
+	* 
+	* {example} parseCurrentEmployment(""): "".
+	*/
+	public static String parseCurrentEmployment(String field) {
+		switch (field){
+		case "1":
+			return "Full-time";
+		case "2":
+			return "Part-time";
+		case "3":
+			return "Seasonal";
+		case "4":
+			return "Not employed";
+		default:
+			return "";
+		}
+	}
+	
+    /**
+	* parseProgramTime: it parses the Program Time field.
+	* 
+	* 
+	* {talendTypes} String
+	* 
+	* {Category} LSAC Parser
+	* 
+	* {param} string("1") input: The Program Time field.
+	* 
+	* {example} parseProgramTime(""): "".
+	*/
+	public static String parseProgramTime(String field) {
+		switch (field){
+		case "1":
+			return "Full-time Day";
+		case "2":
+			return "Full-time Evening";
+		case "3":
+			return "Part-time Day";
+		case "4":
+			return "Part-time Evening";
+		default:
+			return "";
+		}
+	}
+	
+    /**
+	* parseYearsOfFullTimeEmployment: it parses the Years of Full Time Employment field.
+	* 
+	* 
+	* {talendTypes} String
+	* 
+	* {Category} LSAC Parser
+	* 
+	* {param} string("1") input: The Years of Full Time Employment field.
+	* 
+	* {example} parseYearsOfFullTimeEmployment(""): "".
+	*/
+	public static String parseYearsOfFullTimeEmployment(String field) {
+		switch (field){
+		case "1":
+			return "Less than two years";
+		case "2":
+			return "Two to four years";
+		case "3":
+			return "5 to 10 years";
+		case "4":
+			return "Over 10 years";
+		default:
+			return "";
+		}
 	}
 }
