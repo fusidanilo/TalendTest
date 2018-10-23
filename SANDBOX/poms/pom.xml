@@ -10,8 +10,8 @@
   <url>http://www.talend.org/</url>
   <modules>
     <module>code/routines</module>
-    <module>jobs/process/lead_update_0.1</module>
     <module>jobs/process/lsac_upload_lead_0.1</module>
+    <module>jobs/process/lsac_leads_import_0.1</module>
   </modules>
   <properties>
     <talend.project.name>SANDBOX</talend.project.name>
