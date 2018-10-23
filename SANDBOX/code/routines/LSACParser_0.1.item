@@ -407,17 +407,21 @@ public class LSACParser {
 	* {example} parseExpectedEntryYear(""): "".
 	*/
 	public static String parseExpectedEntryYear(String field) {
-		Integer num = Integer.valueOf(field);
-		if (num >= 1 && num <= 96){
-			return String.valueOf(2002 + num);
-		}else if (num == 97){
-			return "Uncertain When Applying";
-		}else if (num == 98){
-			return "Uncertain If Applying";
-		}else if (num == 99){
-			return "Not Applying";
+		try{
+			Integer num = Integer.valueOf(field);
+			if (num >= 1 && num <= 96){
+				return String.valueOf(2002 + num);
+			}else if (num == 97){
+				return "Uncertain When Applying";
+			}else if (num == 98){
+				return "Uncertain If Applying";
+			}else if (num == 99){
+				return "Not Applying";
+			}
+			return "";
+		}catch(Exception e){
+			return "";
 		}
-		return "";
 	}
 	
     /**
