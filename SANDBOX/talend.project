@@ -105,7 +105,6 @@
       <relatedItems xmi:id="_qOPrEdFTEeiCHeHyUGkadw" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_G4IKYNH1EeiYWPcnZNUHNg" id="LSACParser" version="Latest" type="routine"/>
       <relatedItems xmi:id="_G4IKYdH1EeiYWPcnZNUHNg" id="Parser" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_ZeFK8NatEeit7MyhtNcX2w" id="_QuLcANFREeiCHeHyUGkadw - Lead" version="Latest" type="schema"/>
     </ItemsRelations>
     <migrationTask xmi:id="_eI6HUNFHEeirg_xj5Ygxcw" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_eI6HUdFHEeirg_xj5Ygxcw" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
