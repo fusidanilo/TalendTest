@@ -207,7 +207,7 @@ public class LSACParser {
 		case "7":
 			return "No Grading System/No Compatible Grading System";
 		default:
-			return "No Response";
+			return "";
 		}
 	}
 	
