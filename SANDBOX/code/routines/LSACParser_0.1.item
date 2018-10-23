@@ -36,7 +36,9 @@ public class LSACParser {
 		String newValue = message;
 		StringBuilder stringBuilder = new StringBuilder();
 		//Check string length
-		if (message.length() == 0 || message == null)
+		if (message == null)
+			return "";
+		if (message.length() == 0)
 			return "";
 		if (message.length() % 2 == 1){
 			newValue = (new StringBuilder(message)).insert(0, '0').toString();
@@ -253,7 +255,9 @@ public class LSACParser {
 	public static String parseProgramTime(String field) {
 		StringBuilder stringBuilder = new StringBuilder();
 		//Check string length
-		if (field.length() == 0 || field == null)
+		if (field == null)
+			return "";
+		if (field.length() == 0)
 			return "";
 		
 		//Parse newValue
@@ -360,7 +364,9 @@ public class LSACParser {
 		String newValue = field;
 		StringBuilder stringBuilder = new StringBuilder();
 		//Check string length
-		if (field.length() == 0 || field == null)
+		if (field == null)
+			return "";
+		if (field.length() == 0)
 			return "";
 		if (field.length() % 2 == 1){
 			newValue = (new StringBuilder(field)).insert(0, '0').toString();
@@ -440,7 +446,9 @@ public class LSACParser {
 		String newValue = field;
 		StringBuilder stringBuilder = new StringBuilder();
 		//Check string length
-		if (field.length() == 0 || field == null)
+		if (field == null)
+			return "";
+		if (field.length() == 0)
 			return "";
 		if (field.length() % 2 == 1){
 			newValue = (new StringBuilder(field)).insert(0, '0').toString();
@@ -514,7 +522,9 @@ public class LSACParser {
 		String newValue = field;
 		StringBuilder stringBuilder = new StringBuilder();
 		//Check string length
-		if (field.length() == 0 || field == null)
+		if (field == null)
+			return "";
+		if (field.length() == 0)
 			return "";
 		if (field.length() % 2 == 1){
 			newValue = (new StringBuilder(field)).insert(0, '0').toString();
