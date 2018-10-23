@@ -191,7 +191,7 @@ public class LSACParser {
 	public static String parseSelfReportedGPA(String field) {
 		switch (field){
 		case "0":
-			return "No Response";
+			return "";
 		case "1":
 			return "3.75 and up";
 		case "2":
