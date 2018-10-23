@@ -340,16 +340,37 @@ public class LSACParser {
 	* {example} parseProgramType(""): "".
 	*/
 	public static String parseProgramType(String field) {
-		switch (field){
-		case "1":
+		String newValue = field;
+		StringBuilder stringBuilder = new StringBuilder();
+		//Check string length
+		if (field.length() == 0 || field == null)
+			return "";
+		if (field.length() % 2 == 1){
+			newValue = (new StringBuilder(field)).insert(0, '0').toString();
+		}
+		
+		//Parse newValue
+		for(int i = 0; i < newValue.length(); i = i + 2){
+			String temp = getProgramTypeValue(newValue.substring(i, i + 2));
+			if (temp != ""){
+				stringBuilder.append(temp);
+				stringBuilder.append(";");
+			}
+		}
+		return stringBuilder.toString();
+	}
+	
+	private static String getProgramTypeValue(String value){
+		switch (value){
+		case "01":
 			return "Distance";
-		case "2":
+		case "02":
 			return "Dual Degree";
-		case "3":
+		case "03":
 			return "Executive LLM";
-		case "4":
+		case "04":
 			return "On Campus";
-		case "5":
+		case "05":
 			return "Online LLM";
 		default:
 			return "";
