@@ -2802,11 +2802,11 @@
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1184" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_2"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
-    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
-    <elementParameter field="RADIO" name="VERTICAL" value="true"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true"/>
-    <elementParameter field="RADIO" name="PRINT_LABEL" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
     <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;|&quot;"/>
     <elementParameter field="CHECK" name="PRINT_HEADER" show="false" value="false"/>
     <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" show="false" value="false"/>
@@ -3066,278 +3066,6 @@
       </column>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="256">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
-    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
-    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
-    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
-    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;|&quot;"/>
-    <elementParameter field="CHECK" name="PRINT_HEADER" show="false" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" show="false" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
-    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
-    <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="LastName"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FirstName"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Street"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="City"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="State"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PostalCode"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Country"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Phone"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Fax"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Email"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LeadSource"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Canadian_Citizen__c"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Cur_Emp__c"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DOB__c"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Ethnicity__c"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Exp_Entry_Yr__c"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Forum_Type__c"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Gender__c"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="High_Deg_Award_Date__c"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="High_Deg_Country__c"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="High__c"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="IELTS_Scheduled_Date_del__c"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="JD_Deg_1_Country__c"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="JD_Deg_1_Date__c"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="JD_Deg_1_Major__c"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="JD_Deg_1_Qual_Acad_Ind__c"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="JD_Self_GPA__c"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LLM_Country_of_Citizenship__c"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LLM_Matriculated__c"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LSAC_Account_Number__c"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Lawyer__c"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Licensed__c"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Most_Recent_IELTS__c"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Most_Recent_TOEFL_IBT__c"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Other_Country_Citizen__c"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Prov_Int__c"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Query_Date__c"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Query_ID__c"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Relig_Affil__c"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="School_Code__c"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="States_Interest__c"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Student_Org__c"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="TOEFL_IBT_Scheduled_Date_del__c"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Time__c"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Type__c"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="US_Citizen__c"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LLM_Area_Interest__c"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="salesforce_id"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="salesforce_created"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="Lead" name="tLogRow_1">
-      <column comment="" key="false" length="80" name="LastName" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="LastName"/>
-      </column>
-      <column comment="" key="false" length="40" name="FirstName" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="FirstName"/>
-      </column>
-      <column comment="" key="false" length="255" name="Street" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="Street"/>
-      </column>
-      <column comment="" key="false" length="40" name="City" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="City"/>
-      </column>
-      <column comment="" key="false" length="80" name="State" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="State"/>
-      </column>
-      <column comment="" key="false" length="20" name="PostalCode" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="PostalCode"/>
-      </column>
-      <column comment="" key="false" length="80" name="Country" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="Country"/>
-      </column>
-      <column comment="" key="false" length="40" name="Phone" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="Phone"/>
-      </column>
-      <column comment="" key="false" length="-1" name="Fax" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="Fax"/>
-      </column>
-      <column comment="" key="false" length="80" name="Email" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="Email"/>
-      </column>
-      <column comment="" key="false" length="40" name="LeadSource" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="LeadSource"/>
-      </column>
-      <column comment="" key="false" length="-1" name="Canadian_Citizen__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_Boolean" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="Canadian_Citizen__c"/>
-      </column>
-      <column comment="" key="false" length="255" name="Cur_Emp__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="Cur_Emp__c"/>
-      </column>
-      <column comment="" key="false" length="-1" name="DOB__c" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" type="id_Date" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="DOB__c"/>
-        <additionalField key="di.date.noLogicalType" value="true"/>
-      </column>
-      <column comment="" key="false" length="4099" name="Ethnicity__c" nullable="true" originalLength="-1" pattern="" precision="3" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="Ethnicity__c"/>
-      </column>
-      <column comment="" key="false" length="255" name="Exp_Entry_Yr__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="Exp_Entry_Yr__c"/>
-      </column>
-      <column comment="" key="false" length="255" name="Forum_Type__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="Forum_Type__c"/>
-      </column>
-      <column comment="" key="false" length="255" name="Gender__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="Gender__c"/>
-      </column>
-      <column comment="" key="false" length="-1" name="High_Deg_Award_Date__c" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" type="id_Date" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="High_Deg_Award_Date__c"/>
-        <additionalField key="di.date.noLogicalType" value="true"/>
-      </column>
-      <column comment="" key="false" length="255" name="High_Deg_Country__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="High_Deg_Country__c"/>
-      </column>
-      <column comment="" key="false" length="255" name="High__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="High__c"/>
-      </column>
-      <column comment="" key="false" length="-1" name="IELTS_Scheduled_Date_del__c" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" type="id_Date" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="IELTS_Scheduled_Date_del__c"/>
-        <additionalField key="di.date.noLogicalType" value="true"/>
-      </column>
-      <column comment="" key="false" length="255" name="JD_Deg_1_Country__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="JD_Deg_1_Country__c"/>
-      </column>
-      <column comment="" key="false" length="-1" name="JD_Deg_1_Date__c" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" type="id_Date" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="JD_Deg_1_Date__c"/>
-        <additionalField key="di.date.noLogicalType" value="true"/>
-      </column>
-      <column comment="" key="false" length="255" name="JD_Deg_1_Major__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="JD_Deg_1_Major__c"/>
-      </column>
-      <column comment="" key="false" length="255" name="JD_Deg_1_Qual_Acad_Ind__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="JD_Deg_1_Qual_Acad_Ind__c"/>
-      </column>
-      <column comment="" key="false" length="255" name="JD_Self_GPA__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="JD_Self_GPA__c"/>
-      </column>
-      <column comment="" key="false" length="255" name="LLM_Country_of_Citizenship__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="LLM_Country_of_Citizenship__c"/>
-      </column>
-      <column comment="" key="false" length="-1" name="LLM_Matriculated__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_Boolean" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="LLM_Matriculated__c"/>
-      </column>
-      <column comment="" key="false" length="255" name="LSAC_Account_Number__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="LSAC_Account_Number__c"/>
-      </column>
-      <column comment="" key="false" length="-1" name="Lawyer__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_Boolean" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="Lawyer__c"/>
-      </column>
-      <column comment="" key="false" length="-1" name="Licensed__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_Boolean" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="Licensed__c"/>
-      </column>
-      <column comment="" key="false" length="2" name="Most_Recent_IELTS__c" nullable="true" originalLength="-1" pattern="" precision="1" type="id_Double" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="Most_Recent_IELTS__c"/>
-      </column>
-      <column comment="" key="false" length="18" name="Most_Recent_TOEFL_IBT__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_Double" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="Most_Recent_TOEFL_IBT__c"/>
-      </column>
-      <column comment="" key="false" length="-1" name="Other_Country_Citizen__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_Boolean" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="Other_Country_Citizen__c"/>
-      </column>
-      <column comment="" key="false" length="255" name="Prov_Int__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="Prov_Int__c"/>
-      </column>
-      <column comment="" key="false" length="-1" name="Query_Date__c" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" type="id_Date" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="Query_Date__c"/>
-        <additionalField key="di.date.noLogicalType" value="true"/>
-      </column>
-      <column comment="" key="false" length="25" name="Query_ID__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="Query_ID__c"/>
-      </column>
-      <column comment="" key="false" length="255" name="Relig_Affil__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_Boolean" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="Relig_Affil__c"/>
-      </column>
-      <column comment="" key="false" length="18" name="School_Code__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_Double" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="School_Code__c"/>
-      </column>
-      <column comment="" key="false" length="255" name="States_Interest__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="States_Interest__c"/>
-      </column>
-      <column comment="" key="false" length="255" name="Student_Org__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="Student_Org__c"/>
-      </column>
-      <column comment="" key="false" length="-1" name="TOEFL_IBT_Scheduled_Date_del__c" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" type="id_Date" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="TOEFL_IBT_Scheduled_Date_del__c"/>
-        <additionalField key="di.date.noLogicalType" value="true"/>
-      </column>
-      <column comment="" key="false" length="255" name="Time__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="Time__c"/>
-      </column>
-      <column comment="" key="false" length="255" name="Type__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="Type__c"/>
-      </column>
-      <column comment="" key="false" length="-1" name="US_Citizen__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_Boolean" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="US_Citizen__c"/>
-      </column>
-      <column comment="" key="false" length="4099" name="LLM_Area_Interest__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="LLM_Area_Interest__c"/>
-      </column>
-      <column comment="" key="false" length="255" name="salesforce_id" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="salesforce_id"/>
-      </column>
-      <column comment="" key="false" length="255" name="salesforce_created" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="salesforce_created"/>
-      </column>
-    </metadata>
-  </node>
   <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1184" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
@@ -3348,7 +3076,7 @@
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
     <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
     <elementParameter field="CHECK" name="APPEND" value="true"/>
-    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
     <elementParameter field="CHECK" name="COMPRESS" show="false" value="false"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
@@ -3362,9 +3090,9 @@
     <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
     <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
     <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="true"/>
     <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" show="false" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="90"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -4057,11 +3785,7 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row5"/>
   </connection>
-  <connection connectorName="MAIN" label="row6" lineStyle="0" metaname="MAIN" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tSalesforceOutputBulkExec_1" target="tLogRow_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row6"/>
-  </connection>
-  <connection connectorName="REJECT" label="row7" lineStyle="0" metaname="REJECT" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tSalesforceOutputBulkExec_1" target="tLogRow_2">
+  <connection connectorName="REJECT" label="row7" lineStyle="0" metaname="REJECT" offsetLabelX="0" offsetLabelY="0" source="tSalesforceOutputBulkExec_1" target="tLogRow_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row7"/>
   </connection>
@@ -4074,13 +3798,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_a525e41e-3ac8-4b7e-acec-02b74542ffad"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>sP0NQM5RCNOKuvp0kkMRNsGJ+9Yat88KDYT7nC0eawPy9qfvbPTcMBU8qtYpufgGHqh0HMJrsoMS
-Piy+S4GnCQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b311057e-5b44-4ab2-a184-b9ba29bf7387"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>SNUekn0eebcUx2QhM2Oo3VK4Y9orJI1BI9Fz7jVRRMt/QQG3ksO3wfEwgrBRK7d00xVkniwW+OJf
-fdQjh0PZbg==</DigestValue></Reference></SignedInfo><SignatureValue>BnsVoCNjKDShL2m2EEuJY8Yy/TFjUfl9SovKJ0za2DWhvFByXOq/6eeTcjeBFagNEdSEEYsmgjTT
-UNQnsoHSrhkGxj/9b+cq+iQrFcjC/1dnMSrdgdvXRcoEX7e29LO8wJDj/7Gs5koOSVnmaEfxV1wL
-JjNmcSibQJvpw3ztm8q550sVzaWoM0bRyOs+JSf/fx/8KdTpVu3fKl5vxsyQjNrYSUvj2KABzTo0
-DAeRN9koxYzM/s4/aRwjn96hpBIqp0o0Tx8J2re8CZkvn/tQZewJUxmMLWEDAZySbqNJ/lmRc3DT
-wVirO5vlOOyvAs/RJaEEJuC4WIqwVZZmx0phqg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_7073c308-8236-405d-b38e-5d4a7805be18"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>90WRbxlIQ6DuRXhcdOB8OSJjafCPYFvXSbLFn9aWEzDPqxGB+H5QoiefWzNiJ9OV6PZ9G0abYz/n
+JHOCqx7F4Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_bf6136bc-a07c-44f0-af3e-49bc014d21de"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>sphUjsjyNxHVmH44lIZcFIV3ZM1aFw2SJtppbEvuFOgrmxDtk/cJuCRElu5QF3dBwkTTLrik98J8
+P+8OvfJrXQ==</DigestValue></Reference></SignedInfo><SignatureValue>k8uXyAOaPSga0LQJ9Bg9zDwrv7ILt3Sd6+vU1/0rA8FdoKXvCS3Nt+3Hz9IcjPq0WuYw9D2qVsX7
+vsnu4G2fMpSP57ZeuKElJ17mUpm+iHfFe3UAVoJRbLJ8vC5Hh7ip5PdKHgNNkO14ddeBOFoEzTCb
+px341JL+BOE8MTanki1UvTO3ad0gi5XnBKGiRywSu6IJPQ6fL4YicAzn2Jlxp/VzaHa9mGN20aaX
+rkmgDr5B9GNtcOLC67aSequMgMS9I6q+bgokWPITuFuGP1+6wI4D3HyHVVLltjwxkHVULZnkqQDy
+MU9Mxymwzwe1x3XgdGgVmzG/7F3vuuq5P4fVHQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -4104,4 +3828,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b311057e-5b44-4ab2-a184-b9ba29bf7387" Target="#_a525e41e-3ac8-4b7e-acec-02b74542ffad"><Timestamp>2018-10-23 15:19:55</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_bf6136bc-a07c-44f0-af3e-49bc014d21de" Target="#_7073c308-8236-405d-b38e-5d4a7805be18"><Timestamp>2018-10-23 15:25:08</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
