@@ -13,6 +13,7 @@
     <module>jobs/process/lsac_upload_lead_0.1</module>
     <module>jobs/process/lsac_leads_import_0.1</module>
     <module>jobs/process/keystone_leads_import_0.1</module>
+    <module>jobs/process/test_box_0.1</module>
   </modules>
   <properties>
     <talend.project.name>SANDBOX</talend.project.name>
