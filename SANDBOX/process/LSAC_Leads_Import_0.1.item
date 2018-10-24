@@ -3,6 +3,7 @@
     <contextParameter comment="" name="resource_file_LSAC_CSV_File" prompt="resource_file_LSAC_CSV_File?" promptNeeded="false" type="id_String" value="C:/Users/dfusi/OneDrive - Deloitte (O365D)/Loyola/Talend/Loyola_LSAC source list_ONE.csv"/>
     <contextParameter comment="" name="resource_file_LSAC_CountryCode_Mapping_CSV" prompt="resource_file_LSAC_CountryCode_Mapping_CSV?" promptNeeded="false" type="id_String" value="C:/Users/dfusi/OneDrive - Deloitte (O365D)/Loyola/Talend/LSAC_Country_Mapping.csv"/>
     <contextParameter comment="" name="resource_file_LSAC_States_Mapping_CSV" prompt="resource_file_LSAC_States_Mapping_CSV?" promptNeeded="false" type="id_String" value="C:/Users/dfusi/OneDrive - Deloitte (O365D)/Loyola/Talend/LSAC_States_Mapping.csv"/>
+    <contextParameter comment="" name="resource_file_LSAC_Error" prompt="resource_file_LSAC_Error?" promptNeeded="false" type="id_String" value="C:/Users/dfusi/Desktop/out.csv"/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
@@ -3349,7 +3350,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/dfusi/Desktop/out.csv&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.resource_file_LSAC_Error"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
     <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
@@ -3527,6 +3528,18 @@
         <additionalField key="AVRO_TECHNICAL_KEY" value="error"/>
       </column>
     </metadata>
+  </node>
+  <node componentName="tFileDelete" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileDelete_1"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.resource_file_LSAC_CSV_File"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" show="false" value="&quot;C:/Users/dfusi/Documents/Talent Studio Cloud/Talend-Studio-20180411_1414-V7.0.1/workspace/delete_folder&quot;"/>
+    <elementParameter field="TEXT" name="PATH" show="false" value="&quot;C:/Users/dfusi/Documents/Talent Studio Cloud/Talend-Studio-20180411_1414-V7.0.1/workspace/delete_folder or delete_file&quot;"/>
+    <elementParameter field="CHECK" name="FAILON" value="true"/>
+    <elementParameter field="CHECK" name="FOLDER" value="false"/>
+    <elementParameter field="CHECK" name="FOLDER_FILE" value="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note &quot;CURRENT_STATUS&quot; including:&#10;&quot;File (or path) deleted.&quot;&#10;&quot;No file (or path) deleted.&quot;&#10;&quot;File (or path) does not exist or is invalid.&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileDelete_1"/>
   </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tReplaceList_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -3779,6 +3792,9 @@
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tFileDelete_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
   </connection>
   <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tReplaceList_1" offsetLabelX="0" offsetLabelY="0" source="tReplaceList_1" target="tReplaceList_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -4081,13 +4097,18 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_2517a920-5d09-4826-8419-f0974910d827"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>VUj8MS6vG3eUIF4LH3Os0Mc7MUCFBu6+mAUTUo9GLq8dQOqW6/iHI/i0su14Nzq/g1WeGjLXc7om
-qyaA67oUsg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e522a442-f8b1-4729-98fd-cb635920c96c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>cgEFEc/9JmpTUjXrDLr4evFa573/fjmIlQh8VFKwkjmG0rSkzKAvjuyd6tOVaxjrg6ZwoC5IQh2n
-fuXnLeW0hQ==</DigestValue></Reference></SignedInfo><SignatureValue>NPiJBMZveiABc6MbFSfNlZUX1R39BS8glIZiCzS6hSVcYXYnL7M7M33QEvoMzOGSlLqRA2bOyfAN
-xhkkup0Is3VuaM0PPDCIXefwwzC4qVZ3r6ORK5YSMIcVbLEllJ9gofnwND1yubUSsyCyWCLo4WBR
-ukkFKI92poctvge+p+Id5BkImfF6IvJf9lsmkaqQwF2fL4igEqHMw1hfYR3rGGhWPERtSlP9pWOJ
-2Hu+/EjrBFwg6ukOQYpAC3uyOOUdggJgRqTs5vYpa9oQ5AY34ILq6Y6QruGKynMMOalLsvPbxxZp
-QLUSm7rBXMrZFYYxIJG/4peXeSf+7FyuFt5IzQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileDelete_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_0b22c3fd-6bff-497f-a6aa-883958597fe0"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>25JhbT4tY9zKD2CXmsw6QuPMkZ7xkSYulDCg3z++pbpvHtuv8cgT0LizUcuk8ipTmtV1oIpnZ/wy
+Efk6V3KtcQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_dd78cd6e-f22e-438f-a9c6-0eddb6951120"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>JZg3cV8OviiOoEW03wB1x2johKNijPWmZk3rvRNAiKMr1EgxhI7nPPP74bB8jidWfSsG9y/mrhS1
+mA2uCwV+VA==</DigestValue></Reference></SignedInfo><SignatureValue>sglRgh+daRSLU48m0EYO5MDK+a+0Gw9U+r7YsT6DvIyJnkjgoM2Ad7BWan7G6jMOHsPOGmKHDyPa
+uVDojCsDm3JgpYEUUfhSE1XiGjWG8xNcI2zTZmzT5ZwOz2TS33uNJI6QvddLRa7nVVl9/xzTeEj6
+fq7sTU4yJSqVTy74NjVSUO7s91RONYyAVYc/acWZeT1Qmo0sfp042f8xsrbRn1+0qh7q3dq70WfE
+DBI4USUTSZdjmxAhrrPM5jVfpDPdpENj4etPMFQEdXjgIl4fUi7DnUEOU5WNILBxqsmIjNns/bsx
+HjsetXXEXT7Bw6P0o7Dy5mO7pKYLdFr6gjqRMQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -4111,4 +4132,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e522a442-f8b1-4729-98fd-cb635920c96c" Target="#_2517a920-5d09-4826-8419-f0974910d827"><Timestamp>2018-10-23 16:59:31</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_dd78cd6e-f22e-438f-a9c6-0eddb6951120" Target="#_0b22c3fd-6bff-497f-a6aa-883958597fe0"><Timestamp>2018-10-24 13:49:15</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
