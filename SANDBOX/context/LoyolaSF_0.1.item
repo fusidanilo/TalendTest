@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ContextType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" confirmationNeeded="false" name="Default" xmi:id="_GP8PQNhnEei51Y17OzSSWQ" xmi:version="2.0">
+  <contextParameter comment="" name="LoyolaSF_oauth_callbackPort" prompt="LoyolaSF_oauth_callbackPort?" promptNeeded="false" type="id_Integer" value="0" xmi:id="_GP8PQdhnEei51Y17OzSSWQ"/>
+  <contextParameter comment="" name="LoyolaSF_userPassword_securityKey" prompt="LoyolaSF_userPassword_securityKey?" promptNeeded="false" type="id_Password" value="8pW6Nmy2kueVgVQdXmJ2upFE+k6wumP6TkpN4XA5xUUiHJo3j4nlWBTN/zOKEjur" xmi:id="_GP8PQthnEei51Y17OzSSWQ"/>
+  <contextParameter comment="" name="LoyolaSF_userPassword_password" prompt="LoyolaSF_userPassword_password?" promptNeeded="false" type="id_Password" value="8pW6Nmy2kueVgVQdXmJ2upFE+k6wumP6Op04TC+YOGbLw2lWys2HWg==" xmi:id="_GP8PQ9hnEei51Y17OzSSWQ"/>
+  <contextParameter comment="" name="LoyolaSF_clientId" prompt="LoyolaSF_clientId?" promptNeeded="false" type="id_String" value="context.LoyolaSF_clientId" xmi:id="_GP8PRNhnEei51Y17OzSSWQ"/>
+  <contextParameter comment="" name="LoyolaSF_endpoint" prompt="LoyolaSF_endpoint?" promptNeeded="false" type="id_String" value="context.LoyolaSF_endpoint" xmi:id="_GP8PRdhnEei51Y17OzSSWQ"/>
+  <contextParameter comment="" name="LoyolaSF_proxy_userPassword_userId" prompt="LoyolaSF_proxy_userPassword_userId?" promptNeeded="false" type="id_String" value="context.LoyolaSF_proxy_userPassword_userId" xmi:id="_GP8PRthnEei51Y17OzSSWQ"/>
+  <contextParameter comment="" name="LoyolaSF_loginType" prompt="LoyolaSF_loginType?" promptNeeded="false" type="id_String" value="Basic" xmi:id="_GP8PR9hnEei51Y17OzSSWQ"/>
+  <contextParameter comment="" name="LoyolaSF_oauth_clientId" prompt="LoyolaSF_oauth_clientId?" promptNeeded="false" type="id_String" value="context.LoyolaSF_oauth_clientId" xmi:id="_GP8PSNhnEei51Y17OzSSWQ"/>
+  <contextParameter comment="" name="LoyolaSF_sessionDirectory" prompt="LoyolaSF_sessionDirectory?" promptNeeded="false" type="id_String" value="context.LoyolaSF_sessionDirectory" xmi:id="_GP8PSdhnEei51Y17OzSSWQ"/>
+  <contextParameter comment="" name="LoyolaSF_apiVersion" prompt="LoyolaSF_apiVersion?" promptNeeded="false" type="id_String" value="context.LoyolaSF_apiVersion" xmi:id="_GP8PSthnEei51Y17OzSSWQ"/>
+  <contextParameter comment="" name="LoyolaSF_oauth2JwtFlow_keyStorePassword" prompt="LoyolaSF_oauth2JwtFlow_keyStorePassword?" promptNeeded="false" type="id_Password" value="8pW6Nmy2kueVgVQdXmJ2ugXR4oo+kz2dOEgu3osum40IwjdDENFDEB+iJb8T99mK" xmi:id="_GP8PS9hnEei51Y17OzSSWQ"/>
+  <contextParameter comment="" name="LoyolaSF_proxy_userPassword_password" prompt="LoyolaSF_proxy_userPassword_password?" promptNeeded="false" type="id_Password" value="8pW6Nmy2kueVgVQdXmJ2usoVz+prULjCz70TvKM+oEf6Mg1+RJ9et6gbb3RdJxJ+" xmi:id="_GP8PTNhnEei51Y17OzSSWQ"/>
+  <contextParameter comment="" name="LoyolaSF_oauth2JwtFlow_subject" prompt="LoyolaSF_oauth2JwtFlow_subject?" promptNeeded="false" type="id_String" value="context.LoyolaSF_oauth2JwtFlow_subject" xmi:id="_GP8PTdhnEei51Y17OzSSWQ"/>
+  <contextParameter comment="" name="LoyolaSF_timeout" prompt="LoyolaSF_timeout?" promptNeeded="false" type="id_Integer" value="0" xmi:id="_GP8PTthnEei51Y17OzSSWQ"/>
+  <contextParameter comment="" name="LoyolaSF_oauth2JwtFlow_issuer" prompt="LoyolaSF_oauth2JwtFlow_issuer?" promptNeeded="false" type="id_String" value="context.LoyolaSF_oauth2JwtFlow_issuer" xmi:id="_GP8PT9hnEei51Y17OzSSWQ"/>
+  <contextParameter comment="" name="LoyolaSF_oauth_callbackHost" prompt="LoyolaSF_oauth_callbackHost?" promptNeeded="false" type="id_String" value="context.LoyolaSF_oauth_callbackHost" xmi:id="_GP8PUNhnEei51Y17OzSSWQ"/>
+  <contextParameter comment="" name="LoyolaSF_userPassword_userId" prompt="LoyolaSF_userPassword_userId?" promptNeeded="false" type="id_String" value="context.LoyolaSF_userPassword_userId" xmi:id="_GP8PUdhnEei51Y17OzSSWQ"/>
+  <contextParameter comment="" name="LoyolaSF_oauth2JwtFlow_keyStore" prompt="LoyolaSF_oauth2JwtFlow_keyStore?" promptNeeded="false" type="id_String" value="context.LoyolaSF_oauth2JwtFlow_keyStore" xmi:id="_GP8PUthnEei51Y17OzSSWQ"/>
+  <contextParameter comment="" name="LoyolaSF_oauth_tokenFile" prompt="LoyolaSF_oauth_tokenFile?" promptNeeded="false" type="id_String" value="context.LoyolaSF_oauth_tokenFile" xmi:id="_GP8PU9hnEei51Y17OzSSWQ"/>
+  <contextParameter comment="" name="LoyolaSF_oauth2JwtFlow_certificateAlias" prompt="LoyolaSF_oauth2JwtFlow_certificateAlias?" promptNeeded="false" type="id_String" value="context.LoyolaSF_oauth2JwtFlow_certificateAlias" xmi:id="_GP8PVNhnEei51Y17OzSSWQ"/>
+  <contextParameter comment="" name="LoyolaSF_oauth2FlowType" prompt="LoyolaSF_oauth2FlowType?" promptNeeded="false" type="id_String" value="JWT_Flow" xmi:id="_GP8PVdhnEei51Y17OzSSWQ"/>
+  <contextParameter comment="" name="LoyolaSF_oauth2JwtFlow_expirationTime" prompt="LoyolaSF_oauth2JwtFlow_expirationTime?" promptNeeded="false" type="id_Integer" value="0" xmi:id="_GP8PVthnEei51Y17OzSSWQ"/>
+  <contextParameter comment="" name="LoyolaSF_oauth_clientSecret" prompt="LoyolaSF_oauth_clientSecret?" promptNeeded="false" type="id_Password" value="8pW6Nmy2kueVgVQdXmJ2ukQcjvxIY6joQrOk+a1QejugsZQjbfkvrg==" xmi:id="_GP8PV9hnEei51Y17OzSSWQ"/>
+  <contextParameter comment="" name="LoyolaSF_proxy_host" prompt="LoyolaSF_proxy_host?" promptNeeded="false" type="id_String" value="context.LoyolaSF_proxy_host" xmi:id="_GP8PWNhnEei51Y17OzSSWQ"/>
+  <contextParameter comment="" name="LoyolaSF_proxy_port" prompt="LoyolaSF_proxy_port?" promptNeeded="false" type="id_Integer" value="0" xmi:id="_GP8PWdhnEei51Y17OzSSWQ"/>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_17d3e69f-7bf1-44a9-b390-509fe9236b03"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>qO+Fu9KRzwMvcSWo6xsJ6jMwVcjUw38CK2/GpENeHJqX6KVMLMtcpF3xyvlmi3fUV41SzygSOHCk
+1QCnx0KJxw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_eea6a03d-70a0-4df4-b66e-75be32b95168"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>UI0Q0VxOveu3P4WhAjU8JKt+D8/nfhEjcXozSTUcvfRe/YqZqKVyJHJhzjAn6LS1z2IZGqf6iCiM
+aiihHrrEVA==</DigestValue></Reference></SignedInfo><SignatureValue>CPW0YyenuH0XDRBubDFus99eOe6xppsXZIMg9l+nX+sk/NQ4v7Jjh8AU/nuG2g3P2ZubGJc1t9P0
+2XLjm9WsbEZbO3v0XJsJIluKD/hIopG/xxP7O6P1DQu7w3Q4joK7FfI47PtCpSnIIVIxVLSB5Obh
+M3giC/MG6aE4in+jzfrBCm/2fbuB3ZBLTjhkbfrkkhCiAFqBxnxQ+5NH7447nb9diVvwgAT4yd9k
+9tIJanmz8S5oL76pKeP0PG+xhZrrc5YoFoLWgbT7GXso7IF9vJKyJ+vmGy8tm+siZz+j0F4pBbGP
+NoDh0e9KGteOtLa9yiIFrXyl8vgLSU+QaLdVYw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_eea6a03d-70a0-4df4-b66e-75be32b95168" Target="#_17d3e69f-7bf1-44a9-b390-509fe9236b03"><Timestamp>2018-10-25 15:03:14</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ContextType>
