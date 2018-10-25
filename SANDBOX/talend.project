@@ -125,6 +125,7 @@
       <relatedItems xmi:id="_OnKQcNeMEeigDZitt7nZeA" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_OnKQcdeMEeigDZitt7nZeA" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_OnKQcteMEeigDZitt7nZeA" id="_CWc2ENdzEeigDZitt7nZeA - Keystone_Mapping" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_Cv7moNgvEeioc93x1ytkXg" id="_QuLcANFREeiCHeHyUGkadw - Lead" version="Latest" type="schema"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_cMJo8NeYEeigDZitt7nZeA">
       <baseItem xmi:id="_cMJo8deYEeigDZitt7nZeA" id="_LWNmkNeYEeigDZitt7nZeA" version="0.1" type="job"/>
