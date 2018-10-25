@@ -105,6 +105,7 @@
       <relatedItems xmi:id="_qOPrEdFTEeiCHeHyUGkadw" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_G4IKYNH1EeiYWPcnZNUHNg" id="LSACParser" version="Latest" type="routine"/>
       <relatedItems xmi:id="_G4IKYdH1EeiYWPcnZNUHNg" id="Parser" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_05VM8NhfEei51Y17OzSSWQ" id="_vhLB0NglEeioc93x1ytkXg" version="Latest" type="job"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_OnKQYNeMEeigDZitt7nZeA">
       <baseItem xmi:id="_OnKQYdeMEeigDZitt7nZeA" id="_0bLdwNdhEeiHuO6XPmj1hA" version="0.1" type="job"/>
